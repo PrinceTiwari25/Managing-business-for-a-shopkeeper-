@@ -1,0 +1,3 @@
+Date	Item	Purchase Price	Selling Price	Quantity
+2025-04-26	Pen	5	10	50
+2025-04-26	Notebook	20	35	30

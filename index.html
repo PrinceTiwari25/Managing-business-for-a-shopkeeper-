@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Shop Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+        }
+        .logo {
+            text-align: center;
+        }
+        .logo img {
+            width: 150px;
+            height: 150px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: navy;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            margin: 20px auto;
+        }
+        input[type="text"], input[type="number"], input[type="date"], input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            background-color: white;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .summary {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="/static/logo.png" alt="Logo">
+
+        <h2>Pankaj Grocery Store</h2>
+    </div>
+
+    <h1>Mini Shop Manager</h1>
+    
+
+    <form action="/add_item" method="post">
+        <label>Date:</label><br>
+        <input type="date" name="date" required><br>
+        <label>Item Name:</label><br>
+        <input type="text" name="item_name" required><br>
+        <label>Purchase Price:</label><br>
+        <input type="number" name="purchase_price" required><br>
+        <label>Selling Price:</label><br>
+        <input type="number" name="selling_price" required><br>
+        <label>Quantity:</label><br>
+        <input type="number" name="quantity" required><br>
+        <input type="submit" value="Add Item">
+    </form>
+
+    <h2>Inventory Records</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Item Name</th>
+            <th>Purchase Price</th>
+            <th>Selling Price</th>
+            <th>Quantity</th>
+        </tr>
+        <!-- Items will be shown here -->
+    </table>
+
+    <div class="summary">
+        <h2>Today's Summary</h2>
+        <p><b>Total Purchase:</b> ₹<!--purchase--></p>
+        <p><b>Total Sale:</b> ₹<!--sale--></p>
+        <p><b>Profit:</b> ₹<!--profit--></p>
+    </div>
+
+</body>
+</html>     
