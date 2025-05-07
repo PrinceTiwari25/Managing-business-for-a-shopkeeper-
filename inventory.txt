@@ -1,3 +1,4 @@
 Date	Item	Purchase Price	Selling Price	Quantity
-2025-04-26	Pen	5	10	50
-2025-04-26	Notebook	20	35	30
+2025-05-05	harpic	150	200	10
+2025-05-08	mustard oil	120	150	15
+2025-05-07  shoes   1500  2000   2
